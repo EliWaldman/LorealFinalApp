@@ -69,7 +69,7 @@ export default function Carousel() {
         imageURL={item.imageURL}
         />
     );
-
+    
     const scrollX = useRef(new Animated.Value(0)).current;
     const [curentIndex, setCurrentIndex] = useState(0);
     

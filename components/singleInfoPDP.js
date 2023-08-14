@@ -27,22 +27,26 @@ const styles = StyleSheet.create({
         //backgroundColor: 'red'
         marginBottom: 5,
         marginTop: 10,
-        marginLeft: 8
+        marginLeft: 8,
+        //fontWeight: '200'
     },
 
     blurb: {
         //backgroundColor: 'blue'
         //textAlign: 'left',
-        marginLeft: 8
+        marginLeft: 8,
+        //color: 'gray'
     },
 
     titleText: {
         fontSize: 20,
-        fontWeight: '400'
+        fontWeight: '300'
     },
 
     blurbText: {
-        fontSize: 15
+        fontSize: 15,
+        color: '#656565',
+        fontWeight: '200'
 
     }
 })

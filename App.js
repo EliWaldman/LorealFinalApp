@@ -15,9 +15,12 @@ import AddToCart from './components/addToCart';
 import HomepageUGC from './components/homepageUGC';
 import InfoPDP from './components/infoPDP';
 
+
+import Navigator from './routes/mainStack';
+
 export default function App() {
 
-  return (
+/*  return (
     <SafeAreaView style={styles.container}>
         <ScrollView>
           <Ad/>
@@ -34,7 +37,13 @@ export default function App() {
           <HomepageUGC/>
         </ScrollView>
     </SafeAreaView>
+
   );
+*/
+  return (
+    <Navigator/>
+  );
+
 }
 
 const styles = StyleSheet.create({

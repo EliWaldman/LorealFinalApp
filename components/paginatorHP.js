@@ -1,8 +1,8 @@
 import React from "react";
 import {View, Text, StyleSheet, Animated, useWindowDimensions } from "react-native";
-import { RotateInDownLeft } from "react-native-reanimated";
+//import { RotateInDownLeft } from "react-native-reanimated";
 
-export default function Paginator({ scrollX }) {
+export default function PaginatorHP({ scrollX }) {
 
     const {width} = useWindowDimensions();
 
@@ -82,8 +82,10 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'center',
-        height: 64,
-        //backgroundColor: 'green'
+        height: 50,
+        //backgroundColor: 'green',
+        marginBottom: 15,
+        //marginTop: 15
     },
     
     dot: {

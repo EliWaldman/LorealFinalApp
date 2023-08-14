@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "myproject",
-    "slug": "myproject",
+    "slug": "loreal-mobile-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eliwaldman1.lorealmobileapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.eliwaldman1.lorealmobileapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2a6d7718-2d27-42c4-95e2-25644fc4b035"
+      }
+    },
+    "owner": "eliwaldman1",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/2a6d7718-2d27-42c4-95e2-25644fc4b035"
     }
   }
 }

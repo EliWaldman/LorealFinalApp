@@ -4,7 +4,8 @@ import { useRef } from "react";
 import { View, Text, StyleSheet,  } from "react-native";
 
 
-export const HomepageUGCContent = forwardRef((props, parentRef) => {
+
+export const HomepageUGCContent = forwardRef(({videoURL, id, tag}, parentRef) => {
     
     const ref = useRef(null);
 
@@ -63,23 +64,38 @@ export const HomepageUGCContent = forwardRef((props, parentRef) => {
 
  
     return (
-        <Video style={styles.container}
+        <View>
+             
+            <Video style={styles.container}
             ref={ref} 
             resizeMode={Video.RESIZE_MODE_COVER}
             shouldPlay={true}
-            source={{uri: 'https://assets.mixkit.co/videos/preview/mixkit-pov-of-a-basket-of-easter-eggs-48595-large.mp4'}}
-            //isLooping
-        />
+            //source={{uri:carouselVideoData.videoURL}}
+            source={{uri:videoURL} }
+            isLooping
+            
+            
+            />
+            <Text style={styles.tagText}>{tag}</Text>
+        </View>
     );
 })
 
 const styles = StyleSheet.create({
     
     container: {
-        height: 600,
+        height: 550,
         //justifyContent: 'center'
         //width: 800,
         //marginTop: 10
+        //borderRadius: 50,
+        //backgroundColor: 'yellow',
+    },
+
+    tagText: {
+        marginLeft: 42,
+        fontSize: 13,
+        fontWeight: '300',
     }
 });
 

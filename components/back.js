@@ -2,11 +2,17 @@ import React, {useState} from 'react';
 import { Text, View, StyleSheet, Button, Image, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons'; 
 
-export default function Back() {
+export default function Back({ navigation }) {
 
+/*    const pressHandler = () => {
+        navigation.goBack();
+    }
+    <Button title='back to lipstick' onPress={pressHandler}/>  //this goes inside the view below
+*/
     //insert const function that is shown after back to below and shows where the user had last been (ie previous page, should be local)
     return (
         <View style={styles.container}>
+            
             <Ionicons name="chevron-back" size={18} marginLeft={8} color="black" />
             <Text style={styles.text}>Back to Lipstick</Text> 
         </View>
