@@ -44,7 +44,7 @@ export default function App() {
     <Navigator/>
   );
 
-}
+} 
 
 const styles = StyleSheet.create({
   container: {
